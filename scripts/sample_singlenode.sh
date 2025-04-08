@@ -14,12 +14,10 @@ if [ ! -d ".git" ]; then
 	exit 1
 fi
 
-conda activate ttt-video
-
 export WANDB_API_KEY='OPTIONAL'
-NUM_GPUS=${NUM_GPUS:-8}
+NUM_GPUS=${NUM_GPUS:-1}
 
-CHECKPOINT_WEIGHTS_DIR="TODO"
+CHECKPOINT_WEIGHTS_DIR="/content/checkpoint"
 CONFIG_FILE="./configs/eval/ttt-mlp/9s.toml"
 INPUT_FILE="./inputs/example-9s.json"
 
