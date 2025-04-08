@@ -20,8 +20,8 @@ latent_channels = 16
 scale_factor = 0.7
 num_denoising_steps = 50
 output_dir = "./output"
-t5_model_dir = TODO
-vae_checkpoint_path = TODO
+t5_model_dir = '/content/t5-v1_1-xxl'
+vae_checkpoint_path = '/content/CogVideoX-2b-sat/vae'
 
 [guider]
 scale = 6
